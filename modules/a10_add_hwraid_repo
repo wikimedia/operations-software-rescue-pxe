@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+# jessie isn't there yet
+echo "deb http://hwraid.le-vert.net/debian wheezy main" > \
+    "${DEBIRF_ROOT}/etc/apt/sources.list.d/hwraid.list"
+
