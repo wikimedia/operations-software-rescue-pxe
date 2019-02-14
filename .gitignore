@@ -1,6 +1,8 @@
 *-amd64/.bootstrap.log
+*-amd64/.packages
 *-amd64/.fakeroot-state.rescue
 *-amd64/nest/
 *-amd64/rescue_*.cgz
 *-amd64/root/
 *-amd64/vmlinuz-*
+*-amd64/*.iso
