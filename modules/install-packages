@@ -4,6 +4,3 @@ debirf_exec apt-key add /tmp/wmf-apt.key
 
 debirf_exec apt-get -q update
 debirf_exec apt-get --assume-yes install megacli hpssacli
-
-# dwipe fork https://github.com/martijnvanbrummelen/nwipe
-debirf_exec apt-get --assume-yes install nwipe
