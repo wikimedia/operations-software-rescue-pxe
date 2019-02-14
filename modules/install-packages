@@ -1,9 +1,9 @@
 #!/bin/bash -e
-wget -O"${DEBIRF_ROOT}/tmp/hwraid.key" http://hwraid.le-vert.net/debian/hwraid.le-vert.net.gpg.key
-debirf_exec apt-key add /tmp/hwraid.key
+wget -O"${DEBIRF_ROOT}/tmp/wmf-apt.key" http://apt.wikimedia.org/autoinstall/keyring/wikimedia-archive-keyring.gpg
+debirf_exec apt-key add /tmp/wmf-apt.key
 
-debirf_exec apt-get update
-debirf_exec apt-get --assume-yes install megacli
+debirf_exec apt-get -q update
+debirf_exec apt-get --assume-yes install megacli hpssacli
 
 # dwipe fork https://github.com/martijnvanbrummelen/nwipe
 debirf_exec apt-get --assume-yes install nwipe
